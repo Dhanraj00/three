@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Mile - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo and Brand Name Container -->
+            <div class="brand">
+                <img src="Ekart.png" alt="First Mile Logo" class="logo">
+                <h1>First Mile</h1>
+            </div>
+            <button id="logoutBtn" style="display:none;">Logout</button> <!-- Hidden initially -->
+        </div>
+    </header>
+
+    <!-- Main content (Login Form) -->
+    <div id="loginForm" class="form-container">
+        <h2>Login to First Mile</h2>
+        <form id="login">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+
+    <!-- Welcome Page (after successful login) -->
+    <div id="welcomePage" class="form-container" style="display:none;">
+        <h2>Welcome to First Mile</h2>
+        <p>Only authorized users can access this page.</p>
+    </div>
+
+    <!-- Blocks (Initially hidden, will be displayed after successful login) -->
+    <div id="blocksContainer" style="display:none;">
+        <div class="blocks-grid">
+            <!-- IMS Block -->
+            <div id="imsBlock" class="ims-container">
+                <a href="ims.html">
+                    <h2>IMS</h2>
+                    <p>Information Management System (IMS)</p>
+                </a>
+            </div>
+
+            <!-- Block 2 -->
+            <div id="block2" class="ims-container">
+                <a href="page2.html">
+                    <h2>Geo Fake</h2>
+                    <p>Geography </p>
+                </a>
+            </div>
+
+            <!-- Block 3 -->
+            <div id="block3" class="ims-container">
+                <a href="page3.html">
+                    <h2>Time Slot</h2>
+                    <p>Description for Block 3</p>
+                </a>
+            </div>
+
+            <!-- Block 4 -->
+            <div id="block4" class="ims-container">
+                <a href="page4.html">
+                    <h2>CP  Breach </h2>
+                    <p>Description for Block 4</p>
+                </a>
+            </div>
+
+            <!-- Block 5 -->
+            <div id="block5" class="ims-container">
+                <a href="page5.html">
+                    <h2>Functional Breach</h2>
+                    <p>Description for Block 5</p>
+                </a>
+            </div>
+
+            <!-- Block 6 -->
+            <div id="block6" class="ims-container">
+                <a href="page6.html">
+                    <h2>OTC /Perfect HandShake </h2>
+                    <p>Description for Block 6</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <p>&copy; 2025 First Mile. Empowering Your Journey to Success! All rights reserved.</p>
+        </marquee>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
